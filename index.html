@@ -20,11 +20,11 @@
 </html>
 
 <body class="bg-black">
+ <!--Navbar de Bootstrap-->   
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#">
-                <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24"
-                    class="d-inline-block align-text-top">
+                <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Viajes Chile
             </a>
 
@@ -33,7 +33,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
 
-                <div id="links" class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Inicio</a>
@@ -48,12 +48,14 @@
                             <a class="nav-link text-light" href="#">Contacto</a>
                         </li>
                     </ul>
-                </div>
+                </div>      
+            </div>          
+        </div>
     </nav>
 
     <!--Carousel-->
     <header>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
@@ -65,12 +67,12 @@
                     <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -78,79 +80,70 @@
         </div>
     </header>
 
-    <!--Quienes Somos-->
+    <!--Quienes Somos  -->
 
-    <section id="quienessomos" class="container-fluid d-none d-sm-block">
+<section id="quienessomos" class="container d-none d-sm-block">
+         <h3 class="text-center py-4 text-white">¿QUIÉNES SOMOS?</h3>
 
-        <h2 class="text-center py-4">¿QUIÉNES SOMOS?</h2>
-
-        
-        <div class="container">
-            <div class="linea bg-dark-subtle"> <!-- esta es una linea de separación -->
-                <hr class="my-1 ">
-        </div>
+    <div class="container linea bg-dark-subtle">  <!--esta es una linea de separación -->
+      <hr class="my-1 ">
+    </div> 
         
 
         <div class="row py-4">
-            <div class="col mx-auto py-2">
-                <div class="text-center bg-info py-2 text-light">
-                    <i id="icono" class="fa-solid fa-plane" ></i>
-                </div>
-                
-                <p class="text-start pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
-                    praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas.</p>
-            </div>
-    
-            <div class="col mx-auto py-2">
-               
-                <p class="text-start pb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
-                    praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas.</p>
 
-                <div class="text-center bg-info py-2 text-light">
-                     <i id="icono" class="fa-solid fa-mountain"></i>
-                </div>
+        <div class=" col-md-6 col-lg-4 py-2">
+            <div class="text-center bg-info py-2 text-light">
+                <i id="icono" class="fa-solid fa-plane" ></i>
             </div>
-    
-            <div class="col mx-auto py-2">
-                <div class="text-center bg-info py-2 text-light">
-                    <i id="icono" class="fa-solid fa-route"></i>
-
-                </div>
                 
-                <p class="text-start pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
-                    praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
-                    voluptas.</p>
+            <p class="text-start pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
+            praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas.</p>
+        </div>
+    
+         <div class="col-md-6 col-lg-4 py-2">
+             <p class="text-start pb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
+            praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas.</p>
+
+            <div class="text-center bg-info py-2 text-light">
+                 <i id="icono" class="fa-solid fa-mountain"></i>
             </div>
         </div>
-    </section>
+    
+        <div class="col-md-6 col-lg-4 py-2 ">
+            <div class="text-center bg-info py-2 text-light">
+                <i id="icono" class="fa-solid fa-route"></i>
+            </div>
+                
+            <p class="text-start pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Blanditiis suscipit natus ullam sequi
+            praesentium ad, tenetur eligendi eaque culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            voluptas, odio repudiandae rem architecto reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+            oluptas.</p>
+        </div>
+    </div>
+</section>
 
-<!-- Cards-->
+<!-- Cards Bootstrap-->
 
 <section>
 
-    <h2 class="text-center py-4 text-light">DESTACADOS</h2>
+    <h3 class="text-center py-4 text-light">DESTACADOS</h3>
 
-    
-        <div class="container linea bg-dark-subtle">  <!--esta es una linea de separación -->
-            <hr class="my-1 ">
-        </div>
+    <div class="container linea bg-dark-subtle">  <!--esta es una linea de separación -->
+       <hr class="my-1 ">
+    </div>
         
-    
-
 <div class="container py-4">
-
     <div class="row">
 
-        <div class="col-sm-3 mb-3 mb-sm-0">
-
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-2">
             <div class="card h-100">
                 <img src="assets/img/card1.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
@@ -158,11 +151,10 @@
                   <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
-              </div>
+            </div>
         </div>      
 
-        <div class="col-sm-3 mb-3 mb-sm-0">
-
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-2">
             <div class="card h-100">
                 <img src="assets/img/card2.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
@@ -170,11 +162,10 @@
                   <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
-              </div>
+            </div>
         </div>      
               
-        <div class="col-sm-3 mb-3 mb-sm-0">
-
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-2">
             <div class="card h-100">
                 <img src="assets/img/card3.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
@@ -182,11 +173,10 @@
                   <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
-              </div>
+            </div>
         </div>      
               
-        <div class="col-sm-3 mb-3 mb-sm-0">
-
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-2">
             <div class="card h-100">
                 <img src="assets/img/card4.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
@@ -194,11 +184,73 @@
                   <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
-              </div>
+            </div>
         </div>      
     </div>
 </div>
 </section>
+
+<!--Formulario de Contacto Bootstrap-->
+
+<section>
+    <h3 class="text-center py-4 text-light">CONTACTO</h3>
+    <div class="container linea bg-dark-subtle">  <!--esta es una linea de separación -->
+        <hr class="my-1 ">
+     </div>
+
+    <div class="container">
+        <div class="mb-3">
+            <label for="Form" class="form-label text-light">Nombre</label>
+            <input type="text" class="form-control">
+          </div>
+        <div class="mb-3">
+            <label for="Form" class="form-label text-light">Asunto</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="Textarea" class="form-label text-light">Mensaje</label>
+            <textarea class="form-control" id="textarea"> </textarea>
+        </div>
+
+        <button type="button" class="btn btn-info text-light" >Enviar</button>
+    </div>
+</section>
+
+<!--Footer-->
+
+<footer class="container-fluid bg-info p-2 mt-5">
+
+    <div class="row">
+        <div class="col-lg-6 d-flex justify-content-center">
+            <h4>VIAJES CHILE</h4>
+
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+            <div class="links">
+                <a href="https://github.com/">
+                <i class="fa-brands fa-github"></i></a>
+                
+                <a href="https://linkedin.com/">
+                <i class="fa-brands fa-linkedin"></i></a>
+        
+                <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i></a>
+        
+                <a href="http://facebook.com">
+                <i class="fa-brands fa-facebook"></i></a>
+            </div>
+        
+
+        </div>
+
+    </div>
+
+    
+
+        
+</footer>
+
+
 
 
 

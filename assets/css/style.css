@@ -20,12 +20,37 @@ body {
     font-weight: 400;
 }
 
-#quienessomos h2, p {
+#quienessomos p {
     color: #fff;
     background-color: #000;
-    
+    font-weight: 300;   
 }
 
 #icono {
     font-size: 25px;
 }
+
+
+.card-text {
+    font-weight: 400;
+}
+
+#textarea {
+    resize: none;
+    height:150px;
+}
+
+footer h4 {
+    display: inline;
+    color: #fff;
+}
+
+.links {
+    display: inline;
+    font-size: 30px;
+}
+
+footer i.fa-brands {
+    color: #ffffff;
+}
+    
