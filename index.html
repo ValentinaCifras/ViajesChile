@@ -4,7 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon-16x16.png">
     <title>Viajes Chile</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="assets/js/index.js"></script>
+    <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/3121afec89.js" crossorigin="anonymous"></script>
@@ -39,13 +45,13 @@
                             <a class="nav-link text-light" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Quienes Somos</a>
+                            <a class="nav-link text-light" href="#quienessomos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Destacados</a>
+                            <a class="nav-link text-light" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contacto</a>
+                            <a class="nav-link text-light" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>      
@@ -132,7 +138,7 @@
 
 <!-- Cards Bootstrap-->
 
-<section>
+<section id="destacados">
 
     <h3 class="text-center py-4 text-light">DESTACADOS</h3>
 
@@ -148,7 +154,7 @@
                 <img src="assets/img/card1.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
                   <h5 class="card-title text-light">Lorem ipsum dolor</h5>
-                  <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+                  <p class="card-text bg-info text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
             </div>
@@ -159,7 +165,7 @@
                 <img src="assets/img/card2.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
                   <h5 class="card-title text-light">Lorem ipsum dolor</h5>
-                  <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+                  <p class="card-text bg-info text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
             </div>
@@ -170,7 +176,7 @@
                 <img src="assets/img/card3.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
                   <h5 class="card-title text-light">Lorem ipsum dolor</h5>
-                  <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+                  <p class="card-text bg-info text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
             </div>
@@ -181,7 +187,7 @@
                 <img src="assets/img/card4.jpg" class="card-img-top h-100" alt="...">
                 <div class="card-body bg-info">
                   <h5 class="card-title text-light">Lorem ipsum dolor</h5>
-                  <p class="card-text bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
+                  <p class="card-text bg-info text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium iusto asperiores labore
                     voluptas, odio repudiandae rem architecto reprehenderit.</p>
                 </div>
             </div>
@@ -192,7 +198,7 @@
 
 <!--Formulario de Contacto Bootstrap-->
 
-<section>
+<section id="contacto">
     <h3 class="text-center py-4 text-light">CONTACTO</h3>
     <div class="container linea bg-dark-subtle">  <!--esta es una linea de separación -->
         <hr class="my-1 ">
@@ -212,7 +218,14 @@
             <textarea class="form-control" id="textarea"> </textarea>
         </div>
 
-        <button type="button" class="btn btn-info text-light" >Enviar</button>
+
+        <button id="enviar" type="button" class="btn btn-info text-light"
+        data-bs-toggle="tooltip" data-bs-placement="right"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Haz click para enviar tu mensaje.">
+        Enviar
+        </button>
+        
     </div>
 </section>
 
@@ -228,36 +241,35 @@
         <div class="col-lg-6 d-flex justify-content-center">
             <div class="links">
                 <a href="https://github.com/">
-                <i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-github" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Github"></i></a>
                 
                 <a href="https://linkedin.com/">
-                <i class="fa-brands fa-linkedin"></i></a>
+                <i class="fa-brands fa-linkedin" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Linkedin"></i></a>
         
                 <a href="https://twitter.com">
-                <i class="fa-brands fa-twitter"></i></a>
+                <i class="fa-brands fa-twitter" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Twitter"></i></a>
         
                 <a href="http://facebook.com">
-                <i class="fa-brands fa-facebook"></i></a>
+                <i class="fa-brands fa-facebook" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Facebook"></i></a>
             </div>
-        
-
         </div>
-
-    </div>
-
-    
-
-        
+    </div>       
 </footer>
 
 
 
 
-
-
-
-
-
+<!--Componentes utilizados desde Bootstrap: Navbar, Cards, Formulario de contacto, uso de grilla-->
+<!--Componentes utilizados con Bootstrap JS: carousel, tooltip en boton enviar e iconos rrss-->
+<!--Componente utilizado con JQuery: alerta en el boton enviar-->
 
 
     <!--Bootstrap-->
@@ -265,6 +277,11 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    </script>
 </body>
 
 </html>
