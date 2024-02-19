@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
 
-// Esta es la alerta que aparece al hacer click en el boton enviar del formulario
+// Esta es una alerta que aparece al hacer click en el boton 'enviar' del formulario
 
 $(document).ready(function(){
     $('#enviar').on("click",function(){
